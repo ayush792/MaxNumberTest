@@ -1,22 +1,23 @@
 package com.bridgelabz;
 
 public class MaxNumber {
-    X x,y,z;
-    X max;
+    Integer x,y,z;
 
-    public MaxNumber(X x, X y, X z) {
-        this.x=x;
+    public MaxNumber(Integer x, Integer y, Integer z) {
+        this.x = x;
         this.y = y;
-        this.z=z;
+        this.z = z;
     }
 
-    public <E> void validateMax() {
+    public Integer validateMax() {
+        Integer max;
         if(x.compareTo(y) > 0 && x.compareTo(z) > 0) {
-            max = m;
+            max = x;
         } else if(y.compareTo(x) > 0 && y.compareTo(z) > 0) {
             max =y;
         } else {
             max =z;
         }
+        return max;
     }
 }
