@@ -8,7 +8,7 @@ public class TestMaximumNumber {
     public void testinteger() {
         Integer maximum1=20;
         MaxNumber maxnumber=new MaxNumber(20,14,15);
-        maxnumber.validateMax();
-        Assert.assertEquals(maximum,maxnumber.max);
+        int result = maxnumber.validateMax();
+        Assert.assertEquals(maximum1,result);
     }
 }
