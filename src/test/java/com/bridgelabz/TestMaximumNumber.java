@@ -7,22 +7,22 @@ public class TestMaximumNumber {
     @Test
     public void testinteger() {
         Integer maximum1=20;
-        MaxNumber maxnumber=new MaxNumber(20,14,15);
-        Integer result = maxnumber.validateMax();
-        Assert.assertEquals(maximum1,result);
+        MaxNumber maxNumber=new MaxNumber(20,14,15);
+        maxNumber.validateMaximum();
+        Assert.assertEquals(maximum1,maxNumber.max);
     }
     @Test
     public void testDouble() {
         Double maximum=23.5;
-        MaxNumber maxDouble = new MaxNumber(12.3,23.5,16.8);
-        Double resultDouble= maxDouble.validateMaxDouble();
-        Assert.assertEquals(maximum,resultDouble);
+        MaxNumber maxNumber = new MaxNumber(12.3,23.5,16.8);
+        maxNumber.validateMaximum();
+        Assert.assertEquals(maximum,maxNumber.max);
     }
     @Test
     public void testString() {
         String maximum = "zoya";
-        MaxNumber maxString = new MaxNumber("sourabh","karan","zoya");
-        String resultString = maxString.validateMaxString();
-        Assert.assertEquals(maximum,resultString);
+        MaxNumber maxNumber = new MaxNumber("sourabh", "karan", "zoya");
+        maxNumber.validateMaximum();
+        Assert.assertEquals(maximum,maxNumber.max);
     }
 }
