@@ -11,4 +11,11 @@ public class TestMaximumNumber {
         Integer result = maxnumber.validateMax();
         Assert.assertEquals(maximum1,result);
     }
+    @Test
+    public void testDouble() {
+        Double maximum=23.5;
+        MaxNumber maxDouble = new MaxNumber(12.3,23.5,16.8);
+        Double resultDouble= maxDouble.validateMaxDouble();
+        Assert.assertEquals(maximum,resultDouble);
+    }
 }
