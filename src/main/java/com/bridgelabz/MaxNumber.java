@@ -3,7 +3,7 @@ package com.bridgelabz;
 public class MaxNumber {
     Integer x,y,z;
     Double num1,num2,num3;
-
+    String a,b,c;
     public MaxNumber(Integer x, Integer y, Integer z) {
         this.x = x;
         this.y = y;
@@ -14,6 +14,13 @@ public class MaxNumber {
         this.num1=num1;
         this.num2=num2;
         this.num3=num3;
+    }
+
+    public MaxNumber(String a, String b, String c)
+    {
+        this.a = a;
+        this.b = b;
+        this.c = c;
     }
 
     public Integer validateMax() {
@@ -40,6 +47,22 @@ public class MaxNumber {
         }
         else {
             max = num3;
+        }
+        return max;
+    }
+
+    public String validateMaxString() {
+        String max;
+        if(a.compareToIgnoreCase(b) > 0 && a.compareToIgnoreCase(c) > 0)
+        {
+            max = a;
+        }
+        else if(b.compareToIgnoreCase(a) > 0 && b.compareToIgnoreCase(c) > 0)
+        {
+            max = b;
+        }
+        else {
+            max = c;
         }
         return max;
     }

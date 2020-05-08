@@ -18,4 +18,11 @@ public class TestMaximumNumber {
         Double resultDouble= maxDouble.validateMaxDouble();
         Assert.assertEquals(maximum,resultDouble);
     }
+    @Test
+    public void testString() {
+        String maximum = "zoya";
+        MaxNumber maxString = new MaxNumber("sourabh","karan","zoya");
+        String resultString = maxString.validateMaxString();
+        Assert.assertEquals(maximum,resultString);
+    }
 }
